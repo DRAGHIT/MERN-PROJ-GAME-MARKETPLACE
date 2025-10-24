@@ -6,6 +6,10 @@
 .env.production.local
 server/.env
 client/.env
+client/.env.local
+
+# Allow .env.production for frontend deployment
+!client/.env.production
 
 # Dependencies
 node_modules/
