@@ -53,104 +53,154 @@ const seedData = async () => {
     // Create games
     const games = [
       {
-        title: 'Space Explorer',
-        description: 'Explore the vast universe in this epic space adventure. Discover new planets, encounter alien species, and uncover ancient mysteries.',
-        price: 19.99,
+        title: 'Cosmic Odyssey',
+        description: 'Embark on an epic journey through the cosmos. Explore mysterious planets, engage in space battles, and uncover the secrets of ancient alien civilizations. Features stunning visuals and immersive gameplay.',
+        price: 24.99,
         genre: 'Action',
         platform: 'PC',
         developer: users[0]._id,
-        coverImageUrl: 'https://placehold.co/600x400/1E3A8A/FFF?text=Space+Explorer',
-        gameFileUrl: 'https://example.com/games/space-explorer.zip'
+        coverImageUrl: 'https://images.unsplash.com/photo-1614732484003-ef9881555dc3?w=800&h=600&fit=crop',
+        gameFileUrl: 'https://example.com/games/cosmic-odyssey.zip'
       },
       {
-        title: 'Fantasy Kingdom',
-        description: 'Build and manage your own medieval kingdom. Defend against invaders, manage resources, and become the greatest ruler.',
-        price: 24.99,
+        title: 'Medieval Legends',
+        description: 'Build your kingdom from scratch in this immersive medieval strategy game. Manage resources, train armies, forge alliances, and defend your realm against rival kingdoms.',
+        price: 29.99,
         genre: 'Strategy',
         platform: 'PC',
         developer: users[2]._id,
-        coverImageUrl: 'https://placehold.co/600x400/7C2D12/FFF?text=Fantasy+Kingdom',
-        gameFileUrl: 'https://example.com/games/fantasy-kingdom.zip'
+        coverImageUrl: 'https://images.unsplash.com/photo-1518133835878-5a93cc3f89e5?w=800&h=600&fit=crop',
+        gameFileUrl: 'https://example.com/games/medieval-legends.zip'
       },
       {
-        title: 'Pixel Adventure',
-        description: 'A retro-style platformer with modern mechanics. Jump, run, and solve puzzles in this charming pixel art world.',
-        price: 9.99,
+        title: 'Neon Racer',
+        description: 'Experience high-octane racing in a cyberpunk world. Customize your vehicle, compete in underground races, and dominate the neon-lit streets.',
+        price: 19.99,
         genre: 'Action',
         platform: 'PC',
         developer: users[1]._id,
-        coverImageUrl: 'https://placehold.co/600x400/059669/FFF?text=Pixel+Adventure',
-        gameFileUrl: 'https://example.com/games/pixel-adventure.zip'
+        coverImageUrl: 'https://images.unsplash.com/photo-1511882150382-421056c89033?w=800&h=600&fit=crop',
+        gameFileUrl: 'https://example.com/games/neon-racer.zip'
       },
       {
-        title: 'Mystery Manor',
-        description: 'Solve intricate puzzles and uncover dark secrets in this atmospheric mystery game.',
-        price: 14.99,
+        title: 'Shadow Detective',
+        description: 'Solve complex mysteries in this noir-inspired detective game. Investigate crime scenes, interrogate suspects, and piece together clues to catch the killer.',
+        price: 17.99,
         genre: 'Puzzle',
         platform: 'PC',
         developer: users[0]._id,
-        coverImageUrl: 'https://placehold.co/600x400/4C1D95/FFF?text=Mystery+Manor',
-        gameFileUrl: 'https://example.com/games/mystery-manor.zip'
+        coverImageUrl: 'https://images.unsplash.com/photo-1551269901-5c5e14c25df7?w=800&h=600&fit=crop',
+        gameFileUrl: 'https://example.com/games/shadow-detective.zip'
       },
       {
-        title: 'Dungeon Crawler RPG',
-        description: 'An immersive RPG experience with deep character customization, challenging combat, and engaging storylines.',
-        price: 29.99,
+        title: 'Dragon Quest Chronicles',
+        description: 'An epic fantasy RPG with deep character progression, turn-based combat, and a rich storyline. Battle dragons, discover magical artifacts, and save the realm.',
+        price: 34.99,
         genre: 'RPG',
         platform: 'PC',
         developer: users[1]._id,
-        coverImageUrl: 'https://placehold.co/600x400/7F1D1D/FFF?text=Dungeon+Crawler',
-        gameFileUrl: 'https://example.com/games/dungeon-crawler.zip'
+        coverImageUrl: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800&h=600&fit=crop',
+        gameFileUrl: 'https://example.com/games/dragon-quest.zip'
       },
       {
-        title: 'City Builder Pro',
-        description: 'Design and build the city of your dreams. Manage traffic, economy, and citizen happiness.',
-        price: 34.99,
+        title: 'Metropolis Builder',
+        description: 'Design and manage a thriving metropolis. Balance economy, environment, and citizen happiness while expanding your city into a modern marvel.',
+        price: 27.99,
         genre: 'Simulation',
         platform: 'PC',
         developer: users[2]._id,
-        coverImageUrl: 'https://placehold.co/600x400/1E40AF/FFF?text=City+Builder',
-        gameFileUrl: 'https://example.com/games/city-builder.zip'
+        coverImageUrl: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&h=600&fit=crop',
+        gameFileUrl: 'https://example.com/games/metropolis-builder.zip'
       },
       {
-        title: 'Racing Legends',
-        description: 'High-speed racing action with realistic physics and stunning graphics.',
-        price: 19.99,
+        title: 'Pixel Dungeon',
+        description: 'A roguelike dungeon crawler with retro pixel art graphics. Each run is unique with procedurally generated levels and permadeath mechanics.',
+        price: 12.99,
         genre: 'Action',
         platform: 'PC',
         developer: users[0]._id,
-        coverImageUrl: 'https://placehold.co/600x400/DC2626/FFF?text=Racing+Legends',
-        gameFileUrl: 'https://example.com/games/racing-legends.zip'
+        coverImageUrl: 'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=800&h=600&fit=crop',
+        gameFileUrl: 'https://example.com/games/pixel-dungeon.zip'
       },
       {
-        title: 'Puzzle Master',
-        description: 'Test your brain with hundreds of challenging puzzles across multiple difficulty levels.',
-        price: 7.99,
+        title: 'Brain Teasers Deluxe',
+        description: 'Exercise your mind with over 500 challenging puzzles. From logic puzzles to word games, test your cognitive skills across multiple categories.',
+        price: 9.99,
         genre: 'Puzzle',
         platform: 'Web',
         developer: users[1]._id,
-        coverImageUrl: 'https://placehold.co/600x400/B45309/FFF?text=Puzzle+Master',
-        gameFileUrl: 'https://example.com/games/puzzle-master.zip'
+        coverImageUrl: 'https://images.unsplash.com/photo-1606326608606-aa0b62935f2b?w=800&h=600&fit=crop',
+        gameFileUrl: 'https://example.com/games/brain-teasers.zip'
       },
       {
-        title: 'Tactical Warfare',
-        description: 'Command your troops in strategic turn-based combat. Every decision matters.',
-        price: 22.99,
+        title: 'Warzone Tactics',
+        description: 'Command elite squads in intense tactical combat. Plan your strategy, manage resources, and outmaneuver enemy forces in this turn-based strategy game.',
+        price: 21.99,
         genre: 'Strategy',
         platform: 'PC',
         developer: users[2]._id,
-        coverImageUrl: 'https://placehold.co/600x400/065F46/FFF?text=Tactical+Warfare',
-        gameFileUrl: 'https://example.com/games/tactical-warfare.zip'
+        coverImageUrl: 'https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800&h=600&fit=crop',
+        gameFileUrl: 'https://example.com/games/warzone-tactics.zip'
       },
       {
-        title: 'Farm Life Simulator',
-        description: 'Experience the joy of farming. Plant crops, raise animals, and build your dream farm.',
-        price: 16.99,
+        title: 'Harvest Moon Valley',
+        description: 'Live the peaceful life of a farmer. Plant crops, raise livestock, build relationships with villagers, and transform your humble farm into a thriving business.',
+        price: 18.99,
         genre: 'Simulation',
         platform: 'PC',
         developer: users[0]._id,
-        coverImageUrl: 'https://placehold.co/600x400/65A30D/FFF?text=Farm+Simulator',
-        gameFileUrl: 'https://example.com/games/farm-simulator.zip'
+        coverImageUrl: 'https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=800&h=600&fit=crop',
+        gameFileUrl: 'https://example.com/games/harvest-moon.zip'
+      },
+      {
+        title: 'Zombie Apocalypse Survival',
+        description: 'Survive in a post-apocalyptic world overrun by zombies. Scavenge for supplies, build shelter, and fight off hordes of the undead.',
+        price: 22.99,
+        genre: 'Action',
+        platform: 'PC',
+        developer: users[1]._id,
+        coverImageUrl: 'https://images.unsplash.com/photo-1509198397868-475647b2a1e5?w=800&h=600&fit=crop',
+        gameFileUrl: 'https://example.com/games/zombie-survival.zip'
+      },
+      {
+        title: 'Ocean Explorer',
+        description: 'Dive into the depths of the ocean and discover underwater wonders. Explore coral reefs, encounter marine life, and uncover sunken treasures.',
+        price: 15.99,
+        genre: 'Simulation',
+        platform: 'PC',
+        developer: users[2]._id,
+        coverImageUrl: 'https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800&h=600&fit=crop',
+        gameFileUrl: 'https://example.com/games/ocean-explorer.zip'
+      },
+      {
+        title: 'Samurai Warriors',
+        description: 'Master the way of the samurai in feudal Japan. Engage in intense sword fights, honor the bushido code, and unite the warring clans.',
+        price: 26.99,
+        genre: 'Action',
+        platform: 'PC',
+        developer: users[0]._id,
+        coverImageUrl: 'https://images.unsplash.com/photo-1528360983277-13d401cdc186?w=800&h=600&fit=crop',
+        gameFileUrl: 'https://example.com/games/samurai-warriors.zip'
+      },
+      {
+        title: 'Chess Master 3000',
+        description: 'The ultimate chess experience with AI opponents ranging from beginner to grandmaster level. Includes tutorials, puzzles, and online multiplayer.',
+        price: 11.99,
+        genre: 'Puzzle',
+        platform: 'Web',
+        developer: users[1]._id,
+        coverImageUrl: 'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=800&h=600&fit=crop',
+        gameFileUrl: 'https://example.com/games/chess-master.zip'
+      },
+      {
+        title: 'Wild West Outlaws',
+        description: 'Experience the lawless frontier of the Wild West. Rob trains, duel outlaws, and build your reputation as the most feared gunslinger.',
+        price: 23.99,
+        genre: 'Action',
+        platform: 'PC',
+        developer: users[2]._id,
+        coverImageUrl: 'https://images.unsplash.com/photo-1533371452382-d45a9da51ad9?w=800&h=600&fit=crop',
+        gameFileUrl: 'https://example.com/games/wild-west.zip'
       }
     ];
 
